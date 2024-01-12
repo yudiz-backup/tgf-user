@@ -1,0 +1,11 @@
+@import '../../../../assets/scss/variables';
+
+.logo { width: 235px; }
+
+@media (max-width: 991px) {
+   
+}
+
+@media (max-width: 767px) {
+    .logo { width: 168px; }
+}

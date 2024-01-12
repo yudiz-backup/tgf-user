@@ -1,0 +1,14 @@
+@import './../../../assets/scss/variables';
+@import './../../../assets/scss/mixins';
+
+.videoBanner { color: $light-color;
+    &::after { @extend %after-before; bottom: 0; left: 0; height: 100%; width: 100%; background: radial-gradient(58.17% 58.13% at 50.9% 41.87%, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.00) 29.94%, #000 100%), radial-gradient(134.14% 105.41% at 18.02% 103.09%, #000 0%, rgba(0, 0, 0, 0.89) 31.59%, rgba(0, 0, 0, 0.00) 100%); z-index: 0; }
+    iframe { pointer-events: none; }
+}
+.content { z-index: 1; }
+
+ @media (max-width: 767px) {
+    .videoBanner { margin-top: 48px; }
+    .video  { aspect-ratio: 4/3; }
+ }
+

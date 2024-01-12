@@ -1,0 +1,43 @@
+@import './../../../assets/scss/variables';
+
+.mainFooter { color: $light-color; background: $theme-color url("/images/banner/footer-bg.jpg") no-repeat center center / cover; 
+    a:hover { color: $primary; }
+}
+.logoIcon { width: 92px; transform: translateY(-20%); }
+.innerFooter {
+    > div { padding-top: 128px; padding-bottom: 128px; }
+    p b { color: $primary; font-weight: 400; }
+}
+.copyright { padding: 20px 0 98px; border-top: 1px solid $light-color; }
+.nav {
+    a,p { margin-bottom: 6px; 
+        &:last-child { margin-bottom: 0; }
+    }
+}
+.socialList {
+    a { width: 32px; }
+ }
+.scrollTop { width: 80px; height: 80px; background: $primary !important; right: 10%; 
+    img { width: 60% !important; }
+}
+
+ @media (min-width: 768px) and (max-width: 991px) {
+    .logoIcon { width: 72px; }
+    .innerFooter {
+        > div { padding-top: 100px; padding-bottom: 54px; }
+    }
+ }
+
+ @media (max-width: 767px) {
+    .innerFooter {
+        > div { padding-top: 70px; padding-bottom: 30px; }
+    }
+    .logoIcon { width: 48px; transform: translate(16px, 0%); }
+    .nav {
+        a,p { margin-bottom: 10px !important; }
+    }
+    .copyright { padding: 12px 0 116px; }
+
+    .scrollTop { width: 54px; height: 54px; }
+}
+

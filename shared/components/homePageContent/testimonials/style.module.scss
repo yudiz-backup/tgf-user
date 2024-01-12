@@ -1,0 +1,33 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.slide { width: 120px; 
+    // &.active { width: 380px; }
+}
+.item { width: 100%; height: 510px; border-radius: 60px; cursor: pointer;
+    &::after { opacity: 0; transition: all 0.3s ease-in-out; @extend %after-before; top: 0; left: 0; height: 100%; width: 100%; background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0.25%, #000 100%); z-index: 1; }
+}
+.userPic {
+    img { object-fit: cover; height: 100% !important; }
+}
+.content { padding: 68px 24px; z-index: 2; color: $light-color; width: 380px; opacity: 0; transition: all 0.3s ease-in-out;}
+.star { width: 24px;}
+
+@media (max-width: 991px) {
+    .slide { width: 100px; }
+    .item { height: 480px; border-radius: 50px; }
+    .content { width: 320px; }
+   
+}
+
+@media (max-width: 767px) {
+    .slide { width: 80px; }
+    .item { height: 420px; border-radius: 40px; }
+    .content { width: 280px; padding: 52px 20px; }
+}
+
+@media (max-width: 576px) {
+    .slider {
+        margin: 0px -12px;
+    }
+}

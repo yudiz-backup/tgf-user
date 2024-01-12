@@ -1,0 +1,39 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.item { max-width: 328px; padding: 46px 20px 36px; background: $light-color; border-radius: 40px; transition: all 0.3s ease-in-out;
+    box-shadow: 0px 13.957px 63.803px -3.988px rgba(24, 39, 75, 0.12), 0px 7.975px 21.932px -5.982px rgba(24, 39, 75, 0.12);
+    &.active { background: $theme-color; color: $light-color;}
+}
+.icon { width: 64px; }
+.mockup { width: 355px; max-width: 100%; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .item { padding: 32px 18px 28px; }
+}
+
+@media (max-width: 767px) {
+    .features-col {
+        width: auto;
+        max-width: none;
+    }
+}
+@media (max-width: 991px) {
+    .item { padding: 24px 14px 20px; border-radius: 22px; }
+    .icon { width: 44px; }
+}
+@media (min-width: 768px) {
+    .features-row {
+        overflow: visible !important;
+    }
+    .feature-image {
+        position: absolute !important;
+        inset: auto 0 0
+    }
+}
+
+@media (max-width: 767px) {
+    .mockup { width: 250px; max-width: 94%; }
+    .icon { margin-bottom: 12px !important; }
+    .item { margin: 20px 0 40px; padding: 24px 14px 20px; width: 224px; flex-shrink: 0; border-radius: 22px; }
+}

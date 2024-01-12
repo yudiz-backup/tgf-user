@@ -1,0 +1,10 @@
+@import './../../../assets/scss/variables';
+
+.breadcrumb {
+    ol { margin-bottom: 0; font-weight: 600; }
+    .breadcrumbItem + .breadcrumbItem::before { content: ">" }
+    a:hover { color: $theme-color}
+}
+@media (max-width: 767px) {
+    .breadcrumb { font-size: 12px; line-height: 18px; }
+}

@@ -1,0 +1,27 @@
+.testimonials-slider {
+    .swiper-slide.swiper-slide-active {
+        width: 380px;
+        transition: .5s ease-in-out width
+    }
+    .swiper-slide-active {
+        .item::after { opacity: 1; }
+        .content { opacity: 1;}
+    }
+}
+
+
+@media (max-width: 991px) {
+    .testimonials-slider {
+        .swiper-slide.swiper-slide-active {
+            width: 320px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .testimonials-slider {
+        .swiper-slide.swiper-slide-active {
+            width: 280px;
+        }
+    }
+}

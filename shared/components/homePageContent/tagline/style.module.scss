@@ -1,0 +1,46 @@
+.tagline { height: 139px; background: linear-gradient(311deg, #8A6CFA -53.03%, #343899 7.83%, #011A60 82.28%);}
+.title { right: 100%; color: #fff; -moz-transform: translate(100%, -50%); -webkit-transform: translate(100%, -50%); transform: translate(100%, -50%);
+    -moz-animation: scroll 30s linear infinite;
+    -webkit-animation: scroll 30s linear infinite;
+    animation: scroll 30s linear infinite;
+}
+
+@-moz-keyframes scroll {
+    0% {
+        -moz-transform: translate(100%, -50%);
+    }
+    100% {
+        -moz-transform: translate(-100%, -50%);
+    }
+}
+
+@-webkit-keyframes scroll {
+    0% {
+        -webkit-transform: translate(100%, -50%);
+    }
+    100% {
+        -webkit-transform: translate(-100%, -50%);
+    }
+}
+
+@keyframes scroll {
+    0% {
+        -moz-transform: translate(100%, -50%);
+        -webkit-transform: translate(100%, -50%);
+        transform: translate(100%, -50%);
+    }
+    100% {
+        -moz-transform: translate(-100%, -50%);
+        -webkit-transform: translate(-100%, -50%);
+        transform: translate(-100%, -50%);
+    }
+}
+
+@media (max-width: 991px) {
+    .tagline { height: 110px; }
+}
+
+@media (max-width: 767px) {
+    .tagline { height: 68px; }
+    .title { animation-duration: 10s; }
+}

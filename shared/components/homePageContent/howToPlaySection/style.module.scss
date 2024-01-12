@@ -1,0 +1,43 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.howToPlay { color: #fff; background: linear-gradient(311deg, #8A6CFA -53.03%, #343899 7.83%, #011A60 82.28%); }
+.list { height: 540px; overflow: auto;
+    .item:nth-child(even) .itemInner { flex-direction: row-reverse; }
+}
+.number { font-size: 200px; line-height: 0.9; opacity: 0.15; }
+.mockup {
+    img { width: auto !important; height: 100% !important;}
+}
+.howToPlay.fullSection { background: transparent; color: inherit;
+    .list { height: initial; }
+    .item { padding: 24px 0;
+        &:nth-child(even) { background: $light-bg; }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .list { height: 490px; }
+    .number { font-size: 160px; }
+}
+
+@media (max-width: 991px) {
+    .list { height: 360px; }
+    .number { font-size: 140px; }
+}
+
+@media (max-width: 767px) {
+    .howToPlay { padding-bottom: 20px;}
+    .number { font-size: 60px; line-height: 1; }
+    .list { height: 460px; 
+        .item:last-child { margin-bottom: 0; }
+    }
+    .item { margin-bottom: 30px; }
+    .mockup { margin-top: auto; height: calc(100% - 120px) !important;
+        img { margin: 0px auto; display: block; width: auto !important; }
+    }
+    .howToPlay.fullSection {
+        .item { margin: 0; padding: 32px 0 24px;}
+    }
+
+}

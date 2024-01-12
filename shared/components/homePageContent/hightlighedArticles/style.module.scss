@@ -1,0 +1,46 @@
+@import './../../../../assets/scss/variables';
+@import './../../../../assets/scss/mixins';
+
+.hightlighedArticles {  
+    &.active { overflow: visible;}
+    &::after { @extend %after-before; bottom: 0; left: 0; height: 30%; width: 100%; background: linear-gradient(0deg, #F4F4F4 0%, rgba(245, 245, 245, 0.00) 100%); z-index: 1; pointer-events: none; }
+}
+.article { margin-bottom: 40px; aspect-ratio: 650/680; padding: 60px; background: no-repeat center center / cover; color: $light-color; border-radius: 40px;
+    &::after { @extend %after-before; top: 0; left: 0; height: 100%; width: 100%; background: linear-gradient(91deg, #000 0.06%, rgba(0, 0, 0, 0.00) 80.36%); z-index: 0; }
+    > div { z-index: 1;}
+    p:last-child { margin-bottom: 0; }
+}
+.list { max-height: 100vh; overflow: auto; 
+    > div:first-child .article { aspect-ratio: 0; padding-top: 140px; padding-bottom: 140px; }
+}
+.showMore { z-index: 4; bottom: 80px; }
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .article { margin-bottom: 30px; padding: 44px;}
+    .list {
+        > div:first-child .article { aspect-ratio: 0; padding-top: 90px; padding-bottom: 90px; }
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .article { margin-bottom: 30px; padding: 32px;}
+    .list {
+        > div:first-child .article { aspect-ratio: 0; padding-top: 80px; padding-bottom: 80px; }
+    }
+    .showMore { bottom: 60px; }
+}
+
+@media (max-width: 991px) {
+    .article { margin-bottom: 30px; padding: 24px;}
+    .list {
+        > div:first-child .article { aspect-ratio: 0; padding-top: 60px; padding-bottom: 60px; }
+    }
+    .showMore { bottom: 60px; }
+}
+
+@media (max-width: 767px) {
+    .article { margin-bottom: 20px; min-height: 420px; aspect-ratio: 0; border-radius: 12px; }
+    .list {
+        > div:first-child .article { min-height: 460px; }
+    }
+}

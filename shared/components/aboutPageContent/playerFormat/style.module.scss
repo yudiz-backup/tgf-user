@@ -1,0 +1,33 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.playerFormat { padding: 70px; }
+.content { width: 450px; max-width: 100%; max-height: 432px; }
+.card { width: 330px; max-width: 100%; 
+    img { aspect-ratio: 191/300; object-fit: cover; }
+}
+.list { color: $font-light;  }
+.item { margin-top: 100px;
+    &::after { @extend %after-before; height: 42px; width: 1px; background: $font-light; top: -32px; left: 50%; transform: translate( -50%, -100%); }
+}
+
+@media (max-width: 1199px) {
+    .card { width: 260px; }
+    .item { margin-top: 80px;
+        &::after { top: -22px; }
+    }
+}
+
+@media (max-width: 991px) {
+    .playerFormat { padding: 50px; }
+    .content { max-height: 380px; }
+    .item { margin-top: 80px;
+        &::after { top: -22px; }
+    }
+    .card { width: 188px; }
+}
+
+@media (max-width: 767px) {
+    .playerFormat { padding: 30px 0px 36px; background: $light-bg2; }
+    .content { max-height: initial; }
+}

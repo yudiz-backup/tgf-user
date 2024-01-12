@@ -1,0 +1,24 @@
+@import './../../../assets/scss/variables';
+
+.faqList {
+    .head {
+        button { padding: 28px 0; border: none; border-bottom: 2px solid $theme-color; font-size: 16px; line-height: 30px; background: transparent !important; border-radius: 0 !important; box-shadow: none !important;
+            &::after { width: 18px; height: 18px; background: url("/images/icons/plus-icon.svg") no-repeat center center / cover;
+                transform: rotate(45deg); 
+            }
+            &[aria-expanded="false"]::after { transform: rotate(0deg); }
+
+        }
+    }
+    .body { padding: 20px 0;}
+    .item { border: none; background: transparent; }
+}
+
+@media (max-width: 991px) {
+    .faqList {
+        .head {
+            button { padding: 20px 0; font-size: 15px; line-height: 26px; }
+        }
+        .body { padding: 16px 0;}
+    }
+}

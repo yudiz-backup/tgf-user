@@ -1,0 +1,14 @@
+@import './../../../../assets/scss/variables';
+@import './../../../../assets/scss/mixins';
+
+.videoSection {
+    .video { background: $theme-color;
+        clip-path: polygon(3.4% 0, 100% 0, 100% 10%, 100% 86.7%, 93.8% 100%, 0% 100%, 0 92%, 0 9%);
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 1199px) {
+    .video { aspect-ratio: 16/9 !important;}
+}
+

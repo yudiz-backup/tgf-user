@@ -1,0 +1,22 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.visionMission { background: $theme-color no-repeat center center / cover; color: $light-color; 
+    &::after { @extend %after-before; bottom: 0; left: 0; height: 100%; width: 100%; background: linear-gradient(90deg, #000 1.92%, rgba(0, 0, 0, 0.00) 99.79%); z-index: 0; }
+    strong { color: $primary; font-weight: 500; }
+}
+.jayaDeepak { width: 578px; max-width: 50%; right: -10px; z-index: 1; }
+.content { z-index: 2; }
+
+@media (max-width: 1199px) {
+    .jayaDeepak { width: 420px; }
+}
+@media (max-width: 991px) {
+    .jayaDeepak { width: 320px; }
+}
+
+@media (max-width: 767px) {
+    .visionMission { padding-bottom: 360px; }
+    .jayaDeepak { max-width: 96%; width: 360px; left: 50%; transform: translateX(-50%); right: auto; }
+    
+}

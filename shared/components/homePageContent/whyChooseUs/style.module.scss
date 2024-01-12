@@ -1,0 +1,17 @@
+.card { width: 330px; max-width: 100%;
+    img { aspect-ratio: 191/300; object-fit: cover; }
+}
+.list {
+    li { margin-bottom: 20px; padding-left: 34px; background: url("/images/icons/ball-icon.svg") no-repeat left center / 20px auto;}
+}
+
+@media (max-width: 991px) {
+    .list {
+        li { margin-bottom: 16px; padding-left: 32px; background-position: 0 4px;}
+    }
+    .card { width: 300px; }
+}
+
+@media (max-width: 767px) {
+    .card { width: 240px; }
+}

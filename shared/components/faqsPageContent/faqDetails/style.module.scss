@@ -1,0 +1,12 @@
+@import '../../../../assets/scss/variables';
+@import '../../../../assets/scss/mixins';
+
+.faqDetails { padding: 72px 0 120px; }
+
+@media (max-width: 1199px) {
+    .faqDetails { padding: 64px 0 100px; }
+}
+
+@media (max-width: 767px) {
+    .faqDetails { padding: 12px 0 40px; }
+}

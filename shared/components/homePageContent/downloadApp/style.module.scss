@@ -1,0 +1,32 @@
+.downloadApp { height: 665px; background: url("/images/home/download-bg.jpg") no-repeat center center / cover;
+}
+.mockup { transform: translateY(-1%); width: 375px; transition: all 1.2s ease-in-out; transition-delay: 0.4s;
+    .icon { width: 58%; }
+    .appStore { top: 48%; }
+    .googleplay { top: 60%; }
+}
+.jayaDeepak { transform: translateY(5%); width: 532px; transition: all 0.32s ease-in-out; }
+
+.downloadApp:not(.active) {
+    .mockup { transform: translateY(100%); } 
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .downloadApp { height: 565px; }
+    .mockup { transform: translateY(-2%); width: 280px; }
+    .jayaDeepak { transform: translateY(15%); width: 440px;  }
+}
+
+@media (max-width: 991px) {
+    .downloadApp { height: 565px; }
+    .mockup { transform: translateY(-2%); width: 250px; }
+    .jayaDeepak { transform: translateY(15%); width: 400px;  }
+}
+
+@media (max-width: 767px) {
+    .downloadApp { padding-top: 60px; height: 750px; }
+    .mockup,
+    .jayaDeepak  { margin: auto; }
+    .mockup { width: 240px; }
+    .jayaDeepak { width: 240px; transform: translateY(-40%); }
+}

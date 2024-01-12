@@ -1,0 +1,98 @@
+/******* Common Element CSS Start ******/
+:root { scroll-behavior: initial; }
+body 					{ font-size: 16px; line-height: 24px; font-family: inherit; color: $font-color; -webkit-text-size-adjust: none; font-display: swap; }
+ul,ol 					{ padding: 0; list-style: none; }
+a 						{ color: inherit; text-decoration: none; outline: none; cursor: pointer;}
+a:focus, a:active, a:visited, a:HOVER	{ text-decoration: none; outline: none; }
+a:HOVER					{ color: var(--theme-color-light); }
+h1        				{ margin: 0 0 20px; font-size: 64px; line-height: 76px; font-weight: 600; }
+h2        				{ margin: 0 0 20px; font-size: 64px; line-height: 76px; font-weight: 600; }
+h3        				{ margin: 0 0 12px; font-size: 48px; line-height: 54px; font-weight: 400; }
+h4        				{ margin: 0 0 12px; font-size: 32px; line-height: 42px; font-weight: 500; }
+h5        				{ margin: 0 0 12px; font-size: 24px; line-height: 32px; font-weight: 600; }
+h6        				{ margin: 0 0 12px; font-size: 18px; line-height: 26px; font-weight: 500; }
+.xxl-text    		    { font-size: 24px; line-height: 34px; }
+.xl-text    		    { font-size: 20px; line-height: 30px; }
+.big-text    		    { font-size: 18px; line-height: 26px; }
+small,
+.small-text  		    { font-size: 14px; line-height: 20px; }
+.xsmall-text  		    { font-size: 12px; line-height: 18px; }
+
+::-webkit-scrollbar { display: none; }
+.btn-link { padding: 0; color: inherit; font-size: inherit; line-height: inherit; text-decoration: none; }
+.common-section { padding: 100px 0; }
+
+
+.swiper-3d .swiper-slide-shadow { background: transparent !important; }
+.btnShape { padding: 10px 30px; display: inline-flex; background: $primary !important; color: $dark-color; border: 1px solid transparent; border: none !important;
+    clip-path: polygon(6% 0, 100% 0, 100% 10%, 100% 80%, 94% 100%, 0% 100%, 0 94%, 0 20%);
+    &:hover { color: $dark-color; }
+}
+/***** Responsive CSS Start ******/
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    h1        				{ margin: 0 0 18px; font-size: 54px; line-height: 64px; }
+    h2        				{ margin: 0 0 18px; font-size: 54px; line-height: 64px; }
+    h3        				{ font-size: 42px; line-height: 50px; }
+    h4        				{ font-size: 28px; line-height: 38px; }
+
+    .xxl-text    		    { font-size: 22px; line-height: 32px; }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    body 					{ font-size: 15px; line-height: 22px; }
+    h1        				{ margin: 0 0 16px; font-size: 48px; line-height: 58px; }
+    h2        				{ margin: 0 0 16px; font-size: 48px; line-height: 58px; }
+    h3        				{ font-size: 36px; line-height: 44px; }
+    h4        				{ font-size: 25px; line-height: 34px; }
+    h5        				{ font-size: 22px; line-height: 30px; }
+    h6        				{ font-size: 17px; line-height: 24px; }
+
+    .xxl-text    		    { font-size: 20px; line-height: 28px; }
+    .xl-text    		    { font-size: 18px; line-height: 28px; }
+    .big-text    		    { font-size: 17px; line-height: 24px; }
+
+    .common-section         { padding: 80px 0;}
+}
+
+@media (max-width: 991px) {
+    body 					{ font-size: 14px; line-height: 20px; }
+    h1        				{ margin: 0 0 16px; font-size: 36px; line-height: 44px; }
+    h2        				{ margin: 0 0 16px; font-size: 36px; line-height: 44px; }
+    h3        				{ margin: 0 0 10px; font-size: 30px; line-height: 38px; }
+    h4        				{ margin: 0 0 10px; font-size: 22px; line-height: 30px; }
+    h5        				{ margin: 0 0 10px; font-size: 20px; line-height: 28px; }
+    h6        				{ font-size: 17px; line-height: 24px; }
+    p                       { margin-bottom: 14px; }
+
+    .xxl-text    		    { font-size: 20px; line-height: 28px; }
+    .xl-text    		    { font-size: 18px; line-height: 28px; }
+    .big-text    		    { font-size: 17px; line-height: 24px; }
+
+    .btnShape               { padding: 9px 24px; }
+
+    .common-section         { padding: 60px 0;}
+}
+
+@media (max-width: 767px) {
+    body 					{ font-size: 13px; line-height: 18px; }
+    h1        				{ margin: 0 0 12px; font-size: 24px; line-height: 32px; }
+    h2        				{ margin: 0 0 12px; font-size: 24px; line-height: 32px; }
+    h3        				{ font-size: 22px; line-height: 32px; }
+    h4        				{ font-size: 20px; line-height: 30px; }
+    h5        				{ font-size: 18px; line-height: 26px; }
+    h6        				{ font-size: 16px; line-height: 22px; }
+
+    .xxl-text    		    { font-size: 18px; line-height: 26px; }
+    .xl-text    		    { font-size: 16px; line-height: 24px; }
+    .big-text    		    { font-size: 14px; line-height: 20px; }
+
+    .btnShape               { padding: 8px 22px; }
+
+    .common-section         { padding: 40px 0;}
+}
+
+@media (max-width: 575px) {
+    body 					{ font-size: 14px; line-height: 20px; }
+
+}  

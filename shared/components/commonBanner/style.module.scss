@@ -1,0 +1,11 @@
+@import './../../../assets/scss/variables';
+@import './../../../assets/scss/mixins';
+
+.commonBanner { color: $light-color; aspect-ratio: 16/9; width: 100%; max-height: 100vh; background: $theme-color no-repeat center center / cover;
+    &::after { @extend %after-before; bottom: 0; left: 0; height: 100%; width: 100%; background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 57.81%, #000 100%); z-index: 0; }
+}
+.content { z-index: 2;}
+
+@media (max-width: 991px) {
+   
+}

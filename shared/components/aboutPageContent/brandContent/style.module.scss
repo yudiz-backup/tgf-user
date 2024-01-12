@@ -1,0 +1,18 @@
+.brandContent { padding: 55px 0; 
+    p { margin-bottom: 32px; }
+    h1,h2,h3,h4,h5,h6{
+        text-transform: capitalize;
+    }
+}
+
+@media (max-width: 991px) {
+    .brandContent { padding: 44px 0; 
+        p { margin-bottom: 22px; }
+    }
+}
+
+@media (max-width: 767px) {
+    .brandContent { padding: 32px 0 24px; 
+        p { margin-bottom: 24px; }
+    }
+}

@@ -1,0 +1,44 @@
+@import '../../../../assets/scss/variables';
+
+.tagline { height: 139px; background: linear-gradient(311deg, #8A6CFA -53.03%, #343899 7.83%, #011A60 82.28%);}
+.list { 
+    &:nth-child(even) .items {
+        animation-name: scrollEven;
+    }
+}
+.items { 
+    animation: scroll 20s linear infinite alternate;
+}
+
+.item { width: 504px; border-radius: 16px; background: $light-color; box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.08); }
+.userPic { width: 40px; }
+
+@keyframes scroll {
+    0% {
+        transform: translateX(calc(0%));
+    }
+    100% {
+        transform: translateX(calc(100vw - 100%));
+    }
+}
+
+@keyframes scrollEven {
+    0% {
+        transform: translateX(calc(100vw - 100%));
+    }
+    100% {
+        transform: translateX(calc(0%));
+    }
+}
+
+@media (max-width: 1199px) {
+    .item { width: 460px; }
+}
+
+@media (max-width: 991px) {
+    .item { width: 400px; }
+}
+
+@media (max-width: 767px) {
+    .item { width: 90vw; }
+}
